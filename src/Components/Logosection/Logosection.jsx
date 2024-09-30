@@ -22,7 +22,7 @@ const Logosection = () => {
 
   return (
     <Grid xs={12} md={12} sx={{padding:'0px 90px', marginTop:'60px'}}>
-      <Grid xs={12} md={8} sx={{background:'#f2f2f3', display:'flex'}}>
+      <Grid xs={12} md={8} sx={{background:'#f2f2f3', display:'flex', borderRadius:'5px'}}>
         <Box sx={outerBox}>
           <img src={logo_1} alt="" style={imageStyle}/>
         </Box>
