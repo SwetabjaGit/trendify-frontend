@@ -1,0 +1,72 @@
+.relatedproducts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8; /* Light background */
+    margin-bottom: 60px;
+  }
+  
+  .relatedproducts h2 {
+    color: #333; /* Dark text color */
+    font-size: 2rem; /* Adjust font size */
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .relatedproducts hr {
+    width: 150px;
+    height: 4px;
+    border-radius: 5px;
+    background: #ff4141;
+    margin-bottom: 20px;
+    border: none;
+  }
+  
+  .carousel-item {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+ 
+  .slick-slider {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .slick-slide {
+    padding: 5px;
+  }
+  
+  .slick-list {
+    height: 500px;
+  }
+  
+  .slick-slide img {
+    width: 250px;
+  }
+  
+  .slick-dots {
+    bottom: -5px !important;
+  }
+  
+  .slick-dots li button:before {
+    color: #d23e1d !important; /* Color for inactive dots */
+  }
+  
+  .slick-dots .slick-active button:before {
+    color: #d23e1d !important; /* Color for active dot */
+  }
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 45px !important; /* Adjust arrow size */
+    color: #d23e1d !important; /* Arrow color */
+    line-height: 0px !important; /* Center arrow vertically */
+    content: ''; /* Use custom content if needed */
+  }
+ 

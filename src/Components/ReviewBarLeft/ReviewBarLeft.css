@@ -1,0 +1,35 @@
+.reviews-heading-text {
+  font-size: 25px;
+  font-weight: 600;
+}
+.rating-rating-no{
+  display: flex;
+  justify-content: flex-start;
+}
+.rating-rating-no p{
+  margin-top: 4px;
+  font-size: 18px;
+  margin-left: 4px;
+  color: gray;
+}
+.rating-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.review-this-product {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-this-product p {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.review-this-product span {
+  font-size: 0.9em;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
