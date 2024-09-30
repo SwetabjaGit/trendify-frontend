@@ -21,13 +21,15 @@ const Shop = (props) =>{
   return (
     <Grid xs={12} md={12}>
       <Hero/>
-      <Services />
-      <Logosection />
+      <Services/>
+      <Popular/>
+      <NewCollections/>
+      <Logosection/>
     </Grid>
     //   
-    //   <Popular/>
+    //   
     //   <Offers/>
-    //   <NewCollections/>
+    //   
     //   <NewsLetter/>
   )
 }

@@ -33,7 +33,7 @@ const Services = () => {
 
   return (
     <Grid xs={12} md={12} sx={{marginTop:'80px', padding:'0px 90px'}}>
-      <Grid xs={12} md={8} sx={{background:'#f2f2f3', display:'flex'}}>
+      <Grid xs={12} md={8} sx={{background:'#f2f2f3', display:'flex', borderRadius:'5px'}}>
         <Box sx={outerBox}>
           <LocalShippingOutlinedIcon sx={iconStyle}/>
           <Box>

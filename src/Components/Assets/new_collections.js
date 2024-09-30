@@ -81,20 +81,6 @@ let new_collections = [{
         new_price: 50000,
         old_price: 6000,
     },
-    {
-        id: 47,
-        name: "Dell New Alienware x15 R2 Gaming Laptop",
-        image: p11_img,
-        new_price: 71000,
-        old_price: 70500,
-    },
-    {
-        id: 49,
-        name: "ACEMAGIC Gaming Laptop,Laptop with AMD Ryzen 7 5700U Processor(8C/16T, Up to 4.3GHz)",
-        image: p12_img,
-        new_price: 40000,
-        old_price: 39500,
-    },
 ];
 
 export default new_collections;
