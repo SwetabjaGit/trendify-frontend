@@ -105,7 +105,7 @@ const countStyle = {
   display:'flex',
   justifyContent:'center',
   alignItems:'center',
-  backgroundColor:'red',
+  backgroundColor:'#ff3f6c',
   color:'#fff',
   zIndex:'1',
   borderRadius:'11px',

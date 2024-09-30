@@ -87,7 +87,7 @@ const ProductReviewDialog = ({ open, handleClose, product}) => {
             }}
             sx={{
               fontSize: '30px',
-              color: '#ff4141'
+              color: '#ff3f6c'
             }}
           />
           <Divider sx={{ marginTop: 2, marginBottom: 2, width: '100%' }} />
@@ -117,10 +117,10 @@ const ProductReviewDialog = ({ open, handleClose, product}) => {
               sx: {
                 fontSize: '14px',
                 '&:hover .MuiOutlinedInput-notchedOutline': {
-                  borderColor: '#ff4141',
+                  borderColor: '#ff3f6c',
                 },
                 '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                  borderColor: '#ff4141',
+                  borderColor: '#ff3f6c',
                 },
               },
             }}
@@ -128,7 +128,7 @@ const ProductReviewDialog = ({ open, handleClose, product}) => {
               sx: {
                 fontSize: '14px',
                 '&.Mui-focused': {
-                  color: '#ff4141',
+                  color: '#ff3f6c',
                 },
               },
             }}
@@ -154,7 +154,7 @@ const ProductReviewDialog = ({ open, handleClose, product}) => {
           <label htmlFor="upload-file">
             <IconButton color="primary" aria-label="upload picture" component="span">
               <PhotoCamera sx={{
-                color: '#ff4141',
+                color: '#ff3f6c',
                 fontSize: '40px'
               }}
               />
@@ -188,10 +188,10 @@ const ProductReviewDialog = ({ open, handleClose, product}) => {
             sx: {
               fontSize: '14px',
               '&:hover .MuiOutlinedInput-notchedOutline': {
-                borderColor: '#ff4141', // Border color on hover
+                borderColor: '#ff3f6c', // Border color on hover
               },
               '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                borderColor: '#ff4141', // Border color when focused
+                borderColor: '#ff3f6c', // Border color when focused
               },
             },
           }}
@@ -199,7 +199,7 @@ const ProductReviewDialog = ({ open, handleClose, product}) => {
             sx: {
               fontSize: '14px',
               '&.Mui-focused': {
-                color: '#ff4141', // Label color when focused
+                color: '#ff3f6c', // Label color when focused
               },
             },
           }}
@@ -211,7 +211,7 @@ const ProductReviewDialog = ({ open, handleClose, product}) => {
         <Button onClick={handleSubmit} variant="contained" color="primary"
           sx={{
             color: '#fff',
-            background: '#ff4141',
+            background: '#ff3f6c',
             marginBottom: '30px',
             marginRight: '30px',
             marginTop: '0px'

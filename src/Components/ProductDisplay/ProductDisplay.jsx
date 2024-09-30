@@ -127,11 +127,11 @@ const ProductDisplay = (props) => {
   }
 
   const buttonStyle ={
-    backgroundColor:'#ff4141',
+    backgroundColor:'#ff3f6c',
     fontSize:'16px',
     width:'220px',
     padding:'14px 0',
-    '&:hover':{backgroundColor:'#ff4141',}
+    '&:hover':{backgroundColor:'#ff3f6c',}
   };
 
   const deliveryOptionsStyle = {
@@ -218,7 +218,7 @@ const ProductDisplay = (props) => {
             <Typography sx={{fontSize:'20px', color:'#282c3f', marginRight:'12px', textDecoration:'line-through', marginTop:'4px'}} >
               Rs.{product.original_price}
             </Typography>
-            <Typography sx={{fontSize:'20px', color:'#ff905a', marginTop:'4px'}}>
+            <Typography sx={{fontSize:'20px', color:'#ff3f6c', marginTop:'4px'}}>
               ({product.discount_percentage}% OFF)
             </Typography>
           </Box>

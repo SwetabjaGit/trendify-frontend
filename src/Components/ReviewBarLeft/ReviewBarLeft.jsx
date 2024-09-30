@@ -20,7 +20,7 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
   },
   [`& .${linearProgressClasses.bar}`]: {
     borderRadius: 5,
-    backgroundColor: theme.palette.mode === 'light' ? '#ff4141' : '#308fe8',
+    backgroundColor: theme.palette.mode === 'light' ? '#ff3f6c' : '#308fe8',
   },
 }));
 
@@ -37,16 +37,16 @@ const ReviewBarLeft = ({product}) => {
 
   const buttonStyle = { 
     width: '80%', 
-    color: '#ff4141', 
-    borderColor: '#ff4141', 
-    '&:hover': { borderColor: '#ff4141'}, 
+    color: '#ff3f6c', 
+    borderColor: '#ff3f6c', 
+    '&:hover': { borderColor: '#ff3f6c'}, 
   };
 
   return (
     <Box sx={{ p: 0 }}>
       <div className="reviews-heading-text">Customer Reviews</div>
       <div className="rating-rating-no">
-        <Rating name="read-only" value={4} size="large" readOnly sx={{color: '#ff4141'}} />
+        <Rating name="read-only" value={4} size="large" readOnly sx={{color: '#ff3f6c'}} />
         <Typography color="text.primary" variant="body1">4 out of 5</Typography>
       </div>
       <Typography color="text.secondary" variant="body2">999 global ratings</Typography>

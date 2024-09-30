@@ -58,14 +58,14 @@ const ProductCard = (props) => {
     width: '100%',
     marginTop: '0px',
     marginBottom: '23px',
-    color: liked ? '#ffffff' : '#ff4141',
-    backgroundColor: liked ? '#ff4141' : '#ffffff',
-    borderColor: '#ff4141',
+    color: liked ? '#ffffff' : '#ff3f6c',
+    backgroundColor: liked ? '#ff3f6c' : '#ffffff',
+    borderColor: '#ff3f6c',
     fontWeight: '600', 
     '&:hover': { 
-      borderColor: '#ff4141', 
-      color: liked ? '#ffffff' : '#ff4141',
-      backgroundColor: liked ? '#ff4141' : '#ffffff', 
+      borderColor: '#ff3f6c', 
+      color: liked ? '#ffffff' : '#ff3f6c',
+      backgroundColor: liked ? '#ff3f6c' : '#ffffff', 
       fontWeight: '600'
     }, 
   };
@@ -95,7 +95,7 @@ const ProductCard = (props) => {
       </Link>
       <CardContent>
         <Typography style={{marginTop:'-18px'}}>
-          {product && product.rating.stars} <Star sx={{color:'#ff4141', marginBottom:'-5px'}} /> | {product && product.rating.count}
+          {product && product.rating.stars} <Star sx={{color:'#ff3f6c', marginBottom:'-5px'}} /> | {product && product.rating.count}
         </Typography>
         <div className="item-info">
           {!isHovered ? (
@@ -146,7 +146,7 @@ const ProductCard = (props) => {
             >
               Rs.{product && product.original_price}
             </Typography>
-            <Typography style={{fontSize:'14px', marginLeft:'4px', color:'#ff905a', marginTop:'-17px'}} >
+            <Typography style={{fontSize:'14px', marginLeft:'4px', color:'#ff3f6c', marginTop:'-17px'}} >
               ({product && product.discount_percentage}% off)
             </Typography>
           </div>
