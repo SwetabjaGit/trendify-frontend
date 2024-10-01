@@ -11,26 +11,9 @@ import { Link } from 'react-router-dom'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import "./Hero.css";
 
 
-const StyledSlider = styled(Slider)`
-  .slick-dots {
-    bottom: 10px !important;
-  }
-  .slick-dots li button:before {
-    font-size: 20px !important;
-    color: black !important;
-    opacity: 0.75 !important;
-  }
-  
-  .slick-dots li.slick-active button:before {
-    color: blue !important;
-    opacity: 1 !important;
-  }
-`;
-
-
-//e0f7fa, ffecb3, c8e6c9
 const Hero = () =>{
   const mainImgTypoStyle = {
     fontSize:'2rem', 
@@ -92,36 +75,42 @@ const Hero = () =>{
           padding: '20px',
           boxShadow: 'none',
         }}>
-          <Slider {...settings} style={{ height: '107.5%', width: '107%', marginLeft:'-20px'}}>
-            <div style={{ height: '100%', position:'relative' }}>
+          <Slider {...settings} style={{marginTop:'-30px', height: '102%', width: '107%', marginLeft:'-20px'}}>
+            <div style={{ height: '100%'}}>
               <img
                 src={main_image}
                 alt="Main Image"
                 style={{
                   width: '20%',
-                  objectFit: 'cover',
+                  height:'830%',
+                  // objectFit: 'cover',
+                  backgroundSize:'cover',
                   position:'absolute',
                   top:'0',
-                  marginLeft:'-15px',
+                  marginLeft:'-22px',
+                  marginRight:'-8px',
+                  // border:'1px solid green'
                 }}
               />
             </div>
-            <div style={{ height: '100%' }}>
+            <div style={{ height: '100%'}}>
               <img
                 src={main_image_2}
                 alt="Main Image 2"
                 style={{
                   width:'20%',
-                  objectFit: 'cover',
+                  height:'833%',
+                  // objectFit: 'cover',
+                  backgroundSize:'cover',
                   position:'absolute',
                   top:'0',
-                  marginLeft:'-15px',
+                  marginLeft:'-26px',
                 }}
               />
             </div>
           </Slider>
 
-          <CardContent sx={{ zIndex: 2, marginTop: '-245px'}}>
+          <CardContent sx={{ zIndex: 2, marginTop: '-150px'}}>
             <Typography sx={mainImgTypoStyle}>
               new
             </Typography>
@@ -163,7 +152,7 @@ const Hero = () =>{
         {/* First Row */}
         <Grid container item xs={12} md={6} sx={{marginBottom:'40px'}}>
           <Card sx={{...smallImageCard, backgroundImage: `url(${first_image})`}}>
-            <CardContent sx={{zIndex:2, marginTop:'-120px', marginLeft:'-20px'}}>
+            <CardContent sx={{zIndex:2, marginTop:'-100px', marginLeft:'-20px'}}>
               <Typography sx={smallImageStyle}>
                 Festive season
               </Typography>
@@ -186,7 +175,7 @@ const Hero = () =>{
         </Grid>
         <Grid container item xs={12} md={6} sx={{marginBottom:'40px'}}>
           <Card sx={{...smallImageCard, backgroundImage: `url(${second_image})`}}>
-            <CardContent sx={{zIndex:2, marginTop:'-120px', marginLeft:'-20px'}}>
+            <CardContent sx={{zIndex:2, marginTop:'-100px', marginLeft:'-20px'}}>
               <Typography sx={smallImageStyle}>
                 Latest
               </Typography>
@@ -211,7 +200,7 @@ const Hero = () =>{
         {/* Second Row */}
         <Grid container item xs={12} md={6}>
           <Card sx={{...smallImageCard, backgroundImage: `url(${third_image})`}}>
-            <CardContent sx={{zIndex:2, marginTop:'-120px', marginLeft:'-20px'}}>
+            <CardContent sx={{zIndex:2, marginTop:'-100px', marginLeft:'-20px'}}>
               <Typography sx={smallImageStyle}>
                 Men's 
               </Typography>
@@ -232,9 +221,9 @@ const Hero = () =>{
             </CardContent>
           </Card>
         </Grid>
-        <Grid container item xs={12} md={6}>
+        <Grid container item xs={12} md={6} >
           <Card sx={{...smallImageCard, backgroundImage: `url(${fourth_image})`}}>
-            <CardContent sx={{zIndex:2, marginTop:'-120px', marginLeft:'-20px'}}>
+            <CardContent sx={{zIndex:2, marginTop:'-100px', marginLeft:'-20px'}}>
               <Typography sx={smallImageStyle}>
                 Latest
               </Typography>
