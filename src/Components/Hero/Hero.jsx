@@ -1,11 +1,33 @@
 import React from 'react'
+import styled from 'styled-components';
 import main_image from '../Assets/homepageimages/home_image_1.jpg'
+import main_image_2 from '../Assets/homepageimages/second_image.jpg'
 import first_image from '../Assets/homepageimages/first_image.jpg'
 import second_image from '../Assets/homepageimages/catbanner-01.jpg'
 import third_image from '../Assets/homepageimages/catbanner-03.jpg'
 import fourth_image from '../Assets/homepageimages/fourth_image.jpg'
 import { Grid, Card, CardContent, Typography, Button } from '@mui/material'
 import { Link } from 'react-router-dom'
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+
+const StyledSlider = styled(Slider)`
+  .slick-dots {
+    bottom: 10px !important;
+  }
+  .slick-dots li button:before {
+    font-size: 20px !important;
+    color: black !important;
+    opacity: 0.75 !important;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: blue !important;
+    opacity: 1 !important;
+  }
+`;
 
 
 //e0f7fa, ffecb3, c8e6c9
@@ -13,7 +35,8 @@ const Hero = () =>{
   const mainImgTypoStyle = {
     fontSize:'2rem', 
     textTransform:'uppercase',
-    fontWeight:'600'
+    fontWeight:'600',
+    marginLeft:'-570px'
   }
 
   const smallImageCard = {
@@ -48,23 +71,57 @@ const Hero = () =>{
     }
   }
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false
+  };
+
   return (
     <Grid container spacing={2} sx={{ padding: '20px', display:'flex', justifyContent:'center'}}>
       {/* Special Sale - Left Side Large Grid */}
-      <Grid item xs={12} md={4.86} sx={{height:'568px'}}>
-        <Card sx={{ 
-          height: '100%', 
-          position:'relative',
-          backgroundImage: `url(${main_image})`,
-          backgroundSize:'cover',
-          backgroundPosition:'center',
-          display:'flex',
-          alignItems:'center',
-          padding: '20px' ,
-          backgroundRepeat:'no-repeat',
-          boxShadow:'none'
+      <Grid item xs={12} md={4.86}>
+        <Card sx={{
+          height: '100%',
+          position: 'relative',
+          display: 'flex',
+          alignItems: 'center',
+          padding: '20px',
+          boxShadow: 'none',
         }}>
-          <CardContent sx={{zIndex: 2, marginTop:'-255px'}}>
+          <Slider {...settings} style={{ height: '107.5%', width: '107%', marginLeft:'-20px'}}>
+            <div style={{ height: '100%', position:'relative' }}>
+              <img
+                src={main_image}
+                alt="Main Image"
+                style={{
+                  width: '20%',
+                  objectFit: 'cover',
+                  position:'absolute',
+                  top:'0',
+                  marginLeft:'-15px',
+                }}
+              />
+            </div>
+            <div style={{ height: '100%' }}>
+              <img
+                src={main_image_2}
+                alt="Main Image 2"
+                style={{
+                  width:'20%',
+                  objectFit: 'cover',
+                  position:'absolute',
+                  top:'0',
+                  marginLeft:'-15px',
+                }}
+              />
+            </div>
+          </Slider>
+
+          <CardContent sx={{ zIndex: 2, marginTop: '-245px'}}>
             <Typography sx={mainImgTypoStyle}>
               new
             </Typography>
@@ -74,31 +131,32 @@ const Hero = () =>{
             <Typography sx={mainImgTypoStyle}>
               for everyone
             </Typography>
-            <Typography sx={{textTransform:'uppercase', fontSize:'1.56rem', marginTop:'10px', fontWeight:'500'}}>
+            <Typography sx={{ textTransform: 'uppercase', fontSize: '1.56rem', marginTop: '10px', fontWeight: '500', marginLeft:'-570px' }}>
               Min 30% sale
             </Typography>
             <Button
               variant='contained'
               sx={{
-                marginTop:'20px',
-                width:'60%',
-                background:'#000',
-                color:'#fff',
-                borderRadius:'20px',
-                boxShadow:'none',
-                '&:hover':{
-                  background:'#000',
-                  color:'#fff',
-                  borderRadius:'20px',
-                  boxShadow:'none',
+                marginLeft:'-570px',
+                marginTop: '20px',
+                background: '#000',
+                color: '#fff',
+                borderRadius: '20px',
+                boxShadow: 'none',
+                '&:hover': {
+                  background: '#000',
+                  color: '#fff',
+                  borderRadius: '20px',
+                  boxShadow: 'none',
                 }
               }}
             >
-              Buy Now 
+              Buy Now
             </Button>
-          </CardContent>  
+          </CardContent>
         </Card>
       </Grid>
+
 
       {/* Right Side - Smaller Grid Sections */}
       <Grid container item xs={12} md={6} spacing={2}>
