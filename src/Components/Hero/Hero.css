@@ -1,9 +1,9 @@
 .slick-list {
-    border: 1px solid darkblue;
+    /* border: 1px solid darkblue; */
     overflow: hidden;
     margin: 0;
     padding: 0;
-    margin-right: -6px;
+    margin-right: -9px;
     margin-left: -6px;
     margin-bottom: -55px !important;
     position: relative;

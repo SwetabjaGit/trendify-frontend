@@ -87,9 +87,8 @@ const Hero = () =>{
                   backgroundSize:'cover',
                   position:'absolute',
                   top:'0',
-                  marginLeft:'-22px',
-                  marginRight:'-8px',
-                  // border:'1px solid green'
+                  marginLeft:'-17px',
+                  marginRight:'-6px',
                 }}
               />
             </div>
